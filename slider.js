@@ -6,11 +6,11 @@ let colaction = {
     img_4: "./images/img_4.jpg",
 }
 setInterval(() => {
-    counter === 4 ? counter = 1 : document.querySelector(".img").style.backgroundImage = `url(${colaction[`img_${++counter}`]})`
+    counter === 4 ? counter = 1 : document.querySelector(".image").style.backgroundImage = `url(${colaction[`img_${++counter}`]})`
 }, 2000)
 const prevImage = () => {
-    counter === 1 ? counter = 4 : document.querySelector(".img").style.backgroundImage = `url(${colaction[`img_${--counter}`]})`
+    counter === 1 ? counter = 4 : document.querySelector(".image").style.backgroundImage = `url(${colaction[`img_${--counter}`]})`
 }
 const nextImage = () => {
-    counter === 4 ? counter = 1 : document.querySelector(".img").style.backgroundImage = `url(${colaction[`img_${++counter}`]})`
+    counter === 4 ? counter = 1 : document.querySelector(".image").style.backgroundImage = `url(${colaction[`img_${++counter}`]})`
 }
